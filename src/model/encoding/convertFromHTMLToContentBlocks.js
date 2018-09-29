@@ -451,10 +451,10 @@ const genFragment = (
     // See https://github.com/facebook/draft-js/issues/231 for some context.
     if (gkx('draftjs_fix_paste_for_img')) {
       if (node.getAttribute('role') !== 'presentation') {
-        node.textContent = '\ud83d\udcf7';
+        node.textContent = '\ud83d';
       }
     } else {
-      node.textContent = '\ud83d\udcf7';
+      node.textContent = '\ud83d';
     }
 
     // TODO: update this when we remove DraftEntity entirely
